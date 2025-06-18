@@ -1,0 +1,41 @@
+# vxlan:
+#   topology:
+#     vpc_peers:
+#       - peer1: netascode-leaf1
+#         peer2: netascode-leaf2
+#         peer1_peerlink_interfaces:
+#           - name: Ethernet1/1
+#         peer2_peerlink_interfaces:
+#           - name: Ethernet1/1
+#         # domain_id: 1
+#     switches: 
+#       - name: netascode-leaf1
+#         interfaces:
+#           - name: port-channel11
+#             mode: access
+#             description: 'VPC Access Interface 1 Leaf 1'
+#             enabled: true
+#             pc_mode: active
+#             vpc_id: 11 # (VPC Port-channel)
+#             mtu: jumbo
+#             speed: auto
+#             access_vlan: 1301
+#             spanning_tree_portfast: true
+#             enable_bpdu_guard: true
+#             members:
+#               - eth1/4
+#       - name: netascode-leaf2
+#         interfaces:
+#           - name: port-channel11
+#             mode: access
+#             description: 'VPC Access Interface 1 Leaf 1'
+#             enabled: true
+#             pc_mode: active
+#             vpc_id: 11 # (VPC Port-channel)
+#             mtu: jumbo
+#             speed: auto
+#             access_vlan: 1301
+#             spanning_tree_portfast: true
+#             enable_bpdu_guard: true
+#             members:
+#               - eth1/4

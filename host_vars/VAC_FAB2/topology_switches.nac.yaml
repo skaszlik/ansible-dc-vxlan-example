@@ -1,0 +1,20 @@
+---
+vxlan:
+  topology:
+    switches:
+      - name: VAC_SPINE21
+        serial_number: 99FYP2OV1NS
+        role: border_gateway_spine
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.21
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: VAC_LEAF23
+        serial_number: 9M81OZOOCWM
+        role: leaf
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.23
+        routing_loopback_id: 0
+        vtep_loopback_id: 1

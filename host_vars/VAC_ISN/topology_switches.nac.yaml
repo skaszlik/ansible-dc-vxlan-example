@@ -1,0 +1,11 @@
+---
+vxlan:
+  topology:
+    switches:
+      - name: VAC_DCI31
+        serial_number: 9WDRYU70329
+        role: core_router
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.31
+        routing_loopback_id: 0

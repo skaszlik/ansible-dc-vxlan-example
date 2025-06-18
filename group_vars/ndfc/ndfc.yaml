@@ -14,7 +14,7 @@
 # multisite_vrf_delete_mode           Remove vrf state as part of the remove role for multisite (MSD and MFD) fabrics       false
 
 # Parameter to ignore diff-run
-force_run_all: false
+force_run_all: true
 
 # Control Parameters for 'Remove' role tasks in VXLAN EVPN, External, and ISN fabrics
 interface_delete_mode: false

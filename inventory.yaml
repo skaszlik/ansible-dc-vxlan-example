@@ -6,3 +6,9 @@ all:
       hosts:
         nac-fabric1:
           ansible_host: "{{ lookup('ansible.builtin.env', 'ND_HOST') }}"
+        skaszlik-nac-fabric1:
+          ansible_host: "{{ lookup('ansible.builtin.env', 'ND_HOST') }}"
+        automated_tests:
+          ansible_host: "{{ lookup('ansible.builtin.env', 'ND_HOST') }}"
+        BGP_Fab:
+          ansible_host: "{{ lookup('ansible.builtin.env', 'ND_HOST') }}"

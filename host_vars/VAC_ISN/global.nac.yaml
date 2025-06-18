@@ -1,0 +1,8 @@
+---
+vxlan:
+  fabric:
+    name: VAC_ISN
+    type: ISN
+  multisite:
+    isn:
+      bgp_asn: "2.65100"

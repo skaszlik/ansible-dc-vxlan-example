@@ -1,0 +1,20 @@
+---
+vxlan:
+  fabric:
+    name: VAC_FAB1
+    type: VXLAN_EVPN
+  global:
+    bgp_asn: "2.65010"
+    route_reflectors: 4
+    anycast_gateway_mac: 20:20:00:00:cc:cc
+  underlay:
+    ipv6:
+      enable_ipv6_link_local_address: false
+      underlay_subnet_mask: 126
+      underlay_routing_loopback_ip_range: fd00::1110:0/112
+      underlay_vtep_loopback_ip_range: fd00::1111:0/112
+      underlay_rp_loopback_ip_range: fd00::254:254:0/118
+      underlay_subnet_ip_range: fd00::1000:0/112
+    general:
+      routing_protocol: ospf
+      enable_ipv6_underlay: true

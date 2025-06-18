@@ -1,0 +1,14 @@
+---
+vxlan:
+  fabric:
+    name: VAC_MSD
+    type: MSD
+  multisite:
+    enable_ipv6_underlay: true
+    child_fabrics:
+      - name: VAC_FAB1
+      - name: VAC_FAB2
+      - name: VAC_ISN
+    vtep_loopback_id: 100
+  
+  

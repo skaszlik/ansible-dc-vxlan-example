@@ -1,18 +1,12 @@
 ---
 vxlan:
   fabric:
-    name: nac-fabric1
+    name: VAC_FAB2
     type: VXLAN_EVPN
   global:
-    bgp_asn: "65011"
-    route_reflectors: 2
-    anycast_gateway_mac: 12:34:56:78:90:00
-    dns_servers:
-      - ip_address: 10.0.0.2
-        vrf: management
-    ntp_servers:
-      - ip_address: 10.55.0.2
-        vrf: management
+    bgp_asn: "2.65020"
+    route_reflectors: 4
+    anycast_gateway_mac: 20:20:00:00:cc:cc
   underlay:
     ipv6:
       enable_ipv6_link_local_address: false
@@ -24,5 +18,4 @@ vxlan:
     general:
       routing_protocol: ospf
       enable_ipv6_underlay: true
-      replication_mode: multicast
-      
+      replication_mode: ingress

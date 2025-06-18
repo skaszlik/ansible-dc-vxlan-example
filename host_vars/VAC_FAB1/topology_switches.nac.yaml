@@ -1,0 +1,37 @@
+---
+vxlan:
+  topology:
+    switches:
+      - name: VAC_SPINE11
+        serial_number: 9BUXESV382R
+        role: border_gateway_spine
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.11
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: VAC_LEAF13
+        serial_number: 9XPQW74KCIN
+        role: border
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.13
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: VAC_LEAF14
+        serial_number: 9FMOZKLIEI5
+        role: border
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.14
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+      - name: VAC_LEAF15
+        serial_number: 925RKAV24KC
+        role: leaf
+        management:
+          default_gateway_v4: 198.18.133.1
+          management_ipv4_address: 198.18.133.15
+        routing_loopback_id: 0
+        vtep_loopback_id: 1
+    
